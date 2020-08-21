@@ -15,6 +15,7 @@ This time I made it as an APP and developed a bit of a front end to it, to make 
 ```sh
 $ git clone https://github.com/fgbravo/best-seat-finder-app.git
 # You might be asked for credentials to continue forward
+$ cd best-seat-finder
 $ bundle install
 $ rails db:create db:migrate
 $ rails server
