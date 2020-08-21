@@ -1,24 +1,31 @@
-# README
+# Best Seat Finder App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a spin off a previous challenge that used an API to pick the best seats possible of a given venue for you.
 
-Things you may want to cover:
+This time I made it as an APP and developed a bit of a front end to it, to make the experience better.
 
-* Ruby version
+## Requirements
 
-* System dependencies
+- Ruby v2.7.1
+- Rails v6.0.3
+- PostreSQL v12.4
 
-* Configuration
+## Getting Started
 
-* Database creation
+```sh
+$ git clone https://github.com/fgbravo/best-seat-finder-app.git
+# You might be asked for credentials to continue forward
+$ bundle install
+$ rails db:create db:migrate
+$ rails server
+```
 
-* Database initialization
+That's it! Just visit http://localhost:3000/ and try it out!
 
-* How to run the test suite
+## Considerations
 
-* Services (job queues, cache servers, search engines, etc.)
+I basically just copied everything from the API and implemented ERB views with it, also using a couple of stimulus controllers to make it feel more dynamic.
 
-* Deployment instructions
+I did not implement system tests for the views, since I already tested the results in the API.
 
-* ...
+It was fun coding this challenge and I've learned a lot with it. Thanks for the opportunity and hope to hear from you soon!
