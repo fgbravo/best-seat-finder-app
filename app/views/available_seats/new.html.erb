@@ -1,0 +1,5 @@
+<%= form_with url: available_seats_url, method: :POST, data: { controller: "venue"} do %>
+  <%= render "available_seats/new/venue" %>
+  <%= render "available_seats/new/available_seats" %>
+  <%= render "available_seats/new/requested_seats" %>
+<% end %>

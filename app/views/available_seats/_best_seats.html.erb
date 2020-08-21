@@ -1,0 +1,19 @@
+<div id="results" class="section">
+  <% if @errors.present? %>
+    <%= render "available_seats/create/errors", errors: @errors %>
+  <% else %>
+    <div class="section-header">
+      <h2 class="section-title is-size-2-desktop is-size-2-tablet is-size-2-mobile">We found you some sweet seats!</h2>
+    </div>
+    <div class="section-body">
+      <div class="seats">
+        <% result.each do |seat| %>
+          <div class="seat">
+            <span><%= seat.row %></span>
+            <span><%= seat.column %></span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

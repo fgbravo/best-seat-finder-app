@@ -1,0 +1,27 @@
+.btn {
+  border-radius: 12px;
+  padding: 12px;
+  width: 10rem;
+  border: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &:disabled {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+
+    &:hover {
+      background-color: #EFEFEF;
+    }
+  }
+
+  &-next {
+    background-color: #00a896;
+    color: #FFF;
+
+    &:hover {
+      background-color: #02c39a;
+    }
+  }
+}

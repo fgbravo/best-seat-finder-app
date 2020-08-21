@@ -1,0 +1,20 @@
+<div id="venue" class="section" data-controller="navigation validation">
+  <div class="section-header">
+    <h1 class="section-title is-size-1-desktop is-size-1-tablet is-size-1-mobile">Best Seat Finder</h1>
+    <h2 class="section-subtitle is-size-2-desktop is-size-2-tablet is-size-2-mobile">What's the layout of the venue?</h2>
+  </div>
+  <div class="section-body">
+    <div class="input-holder">
+      <input type="number" name="venue[layout][rows]" id="venue_layout_rows" min="1" max="26" data-target="venue.rows validation.field validation.input" data-validator="row" data-action="change->validation#validate change->validation#enableButton" required>
+      <label for="venue_layout_rows">Rows</label>
+    </div>
+
+    <div class="input-holder">
+      <input type="number" name="venue[layout][columns]" id="venue_layout_columns" data-target="venue.columns validation.input" data-action="change->validation#enableButton" required>
+      <label for="venue_layout_columns">Columns</label>
+    </div>
+  </div>
+  <div class="section-footer">
+    <button type="button" id="btn-venue" class="btn btn-next" data-target="navigation.next validation.button" data-action="click->venue#buildSeats click->navigation#nextSection" data-current-section="venue" data-next-section="available_seats" disabled>Continue</button>
+  </div>
+</div>
